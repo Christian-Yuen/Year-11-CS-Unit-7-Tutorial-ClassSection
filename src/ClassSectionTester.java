@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class ClassSectionTester {
@@ -58,7 +58,7 @@ public class ClassSectionTester {
     // Test 4
     public void TestForYearLevel() {
         setUp();
-        assertEquals(12, student1.getYearLevel(), "Make sure year level is correct!");
+        assertEquals(12, student1.getYearLevel());//, "Make sure year level is correct!");
         tearDown();
     }
 
@@ -240,6 +240,4 @@ public class ClassSectionTester {
         assertEquals(1, cs.getStudents().size(), "Make sure that no two identical Student objects can be added to a class section!");
         tearDown();
     }
-
-
 }
